@@ -9,6 +9,7 @@ import com.kamedon.kodeinsample.api.GithubApi
 import com.kamedon.kodeinsample.repository.GithubRepository
 import com.kamedon.kodeinsample.repository.GithubRepositoryImpl
 import okhttp3.OkHttpClient
+import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Converter
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -38,7 +39,8 @@ object NetworkModule {
          * OkHttp Retrofit
          */
         bind<OkHttpClient>() with singleton {
-            OkHttpClient.Builder().build()
+            OkHttpClient.Builder().addNetworkInterceptor(HttpLoggingInterceptor().apply { level = HttpLoggingInterceptor.Level.BASIC }).build()
+
         }
 
         bind<Retrofit>() with singleton {

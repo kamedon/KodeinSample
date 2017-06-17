@@ -10,6 +10,6 @@ import retrofit2.http.Path
  */
 interface GithubApi {
     @GET("users/{user}")
-    fun user(@Path("user") user: String):Call<User>
+    fun user(@Path("user") user: String): Call<User>
 
 }
