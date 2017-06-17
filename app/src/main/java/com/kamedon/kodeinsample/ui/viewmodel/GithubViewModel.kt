@@ -14,16 +14,18 @@ import kotlinx.coroutines.experimental.launch
  */
 
 class GithubViewModel(val repository: GithubRepository) : BaseObservable() {
+    @Bindable
     var user: String = ""
         set(value) {
             field = value
-//            notifyPropertyChanged(BR.user)
+            notifyPropertyChanged(BR.user)
         }
 
+    @Bindable
     var name: String = ""
         set(value) {
             field = value
-//            notifyPropertyChanged(BR.name)
+            notifyPropertyChanged(BR.name)
         }
 
     fun onClickSearch() = launch(UI) {
