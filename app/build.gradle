@@ -12,6 +12,8 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        buildConfigField "String", "GITHUB_ENDOPOINT", "\"https://api.github.com/\""
     }
 
     buildTypes {
@@ -44,8 +46,8 @@ dependencies {
     //API
     implementation 'com.squareup.okhttp3:okhttp:3.8.0'
     implementation 'com.squareup.retrofit2:retrofit:2.3.0'
-    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'ru.gildor.coroutines:kotlin-coroutines-retrofit:0.5.0'
 
     //DI
     implementation 'com.github.salomonbrys.kodein:kodein:4.0.0'
