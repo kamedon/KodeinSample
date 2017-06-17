@@ -6,8 +6,8 @@ import com.github.salomonbrys.kodein.instance
 import com.github.salomonbrys.kodein.singleton
 import com.kamedon.kodeinsample.BuildConfig
 import com.kamedon.kodeinsample.api.GithubApi
-import com.kamedon.kodeinsample.repository.GitubRepository
-import com.kamedon.kodeinsample.repository.GitubRepositoryImpl
+import com.kamedon.kodeinsample.repository.GithubRepository
+import com.kamedon.kodeinsample.repository.GithubRepositoryImpl
 import okhttp3.OkHttpClient
 import retrofit2.Converter
 import retrofit2.Retrofit
@@ -23,8 +23,8 @@ object NetworkModule {
         /*
          * Repository
          */
-        bind<GitubRepository>() with singleton {
-            GitubRepositoryImpl(instance())
+        bind<GithubRepository>() with singleton {
+            GithubRepositoryImpl(instance())
         }
 
         /*
