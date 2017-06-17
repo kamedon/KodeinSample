@@ -9,10 +9,8 @@ import com.kamedon.kodeinsample.api.GithubApi
 import com.kamedon.kodeinsample.repository.GitubRepository
 import com.kamedon.kodeinsample.repository.GitubRepositoryImpl
 import okhttp3.OkHttpClient
-import retrofit2.CallAdapter
 import retrofit2.Converter
 import retrofit2.Retrofit
-import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 
 /**
