@@ -15,7 +15,10 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding.githubBtn.setOnClickListener {
+        binding.mvpBtn.setOnClickListener {
+            startActivity(Intent(applicationContext, MVPActivity::class.java))
+        }
+        binding.mvvpBtn.setOnClickListener {
             startActivity(Intent(applicationContext, MVVMActivity::class.java))
         }
     }

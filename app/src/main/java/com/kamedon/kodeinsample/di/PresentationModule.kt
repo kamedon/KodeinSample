@@ -1,6 +1,7 @@
 package com.kamedon.kodeinsample.di
 
 import com.github.salomonbrys.kodein.*
+import com.kamedon.kodeinsample.presenter.GithubPresenter
 import com.kamedon.kodeinsample.ui.viewmodel.GithubViewModel
 
 /**
@@ -11,6 +12,10 @@ object PresentationModule {
     val module = Kodein.Module {
         bind<GithubViewModel>() with provider {
             GithubViewModel(instance())
+        }
+
+        bind<GithubPresenter>() with provider {
+            GithubPresenter(instance(), instance())
         }
     }
 }

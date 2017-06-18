@@ -38,7 +38,7 @@ class GithubViewModel(val repository: GithubRepository) : BaseObservable() {
                 this@GithubViewModel.name = "$id:$name"
             }
         } catch (e: Throwable) {
-            name = "error"
+            name = e.message ?: "error"
             e.printStackTrace()
         }
     }
