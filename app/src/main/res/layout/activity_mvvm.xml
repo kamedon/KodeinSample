@@ -13,7 +13,7 @@
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.kamedon.kodeinsample.ui.page.GithubActivity">
+        tools:context="com.kamedon.kodeinsample.ui.page.MVVMActivity">
 
         <Button
             android:id="@+id/searchBtn"

@@ -4,7 +4,6 @@ import android.databinding.BaseObservable
 import android.databinding.Bindable
 import android.util.Log
 import com.kamedon.kodeinsample.BR
-import com.kamedon.kodeinsample.entity.User
 import com.kamedon.kodeinsample.repository.GithubRepository
 import kotlinx.coroutines.experimental.android.UI
 import kotlinx.coroutines.experimental.launch

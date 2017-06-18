@@ -7,16 +7,16 @@ import com.github.salomonbrys.kodein.Kodein
 import com.github.salomonbrys.kodein.KodeinInjector
 import com.github.salomonbrys.kodein.instance
 import com.kamedon.kodeinsample.R
-import com.kamedon.kodeinsample.databinding.ActivityGithubBinding
+import com.kamedon.kodeinsample.databinding.ActivityMvvmBinding
 import com.kamedon.kodeinsample.ui.viewmodel.GithubViewModel
 import com.kamedon.kodeinsample.util.kodein
 
-class GithubActivity : AppCompatActivity() {
+class MVVMActivity : AppCompatActivity() {
 
     val injector: KodeinInjector = KodeinInjector()
 
     val binding by lazy {
-        DataBindingUtil.setContentView<ActivityGithubBinding>(this, R.layout.activity_github)
+        DataBindingUtil.setContentView<ActivityMvvmBinding>(this, R.layout.activity_mvvm)
     }
 
     val viewModel: GithubViewModel by injector.instance()

@@ -17,7 +17,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.page.GithubActivity" />
+        <activity android:name=".ui.page.MVVMActivity" />
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

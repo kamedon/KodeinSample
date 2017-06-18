@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding.githubBtn.setOnClickListener {
-            startActivity(Intent(applicationContext, GithubActivity::class.java))
+            startActivity(Intent(applicationContext, MVVMActivity::class.java))
         }
     }
 }
